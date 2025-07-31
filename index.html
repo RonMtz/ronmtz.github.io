@@ -1,97 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RonMtz - Estratega Visual</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #ffffff;
-      color: #333;
+      padding: 0;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
-    }
-    .card {
-      max-width: 600px;
-      width: 100%;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #fff;
       text-align: center;
     }
-    .profile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 20px;
+    .container {
+      max-width: 600px;
+      padding: 20px;
     }
-    .profile img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+    img {
+      width: 120px;
+      height: 120px;
       object-fit: cover;
-      border: 3px solid #eee;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
-    .info {
-      text-align: left;
-    }
-    .info h1 {
+    h1 {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 1.8rem;
     }
-    .info h2 {
-      margin: 4px 0;
+    h2 {
+      margin: 0;
+      font-size: 1.2rem;
       font-weight: normal;
-      font-size: 1.2em;
-      color: #777;
+      color: #666;
     }
-    .info p {
-      margin: 4px 0;
-      color: #555;
-      font-size: 0.95em;
+    .location {
+      margin: 5px 0 20px;
+      color: #666;
     }
-    .description {
-      margin: 20px 0;
-      font-size: 1em;
+    p {
+      font-size: 1rem;
+      color: #333;
       line-height: 1.5;
     }
-    .social-icons, .contact-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin: 10px 0;
+    .social-icons a {
+      margin: 0 8px;
+      font-size: 1.3rem;
+      color: #000;
+      text-decoration: none;
     }
-    .social-icons a, .contact-icons a {
-      font-size: 1.5em;
-      color: #333;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover, .contact-icons a:hover {
-      color: #0077b5;
-    }
-    .contact-info {
-      margin-top: 10px;
-      font-size: 0.95em;
+    .contact {
+      margin-top: 15px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="profile">
-      <img src="img/RonMtz.png" alt="RonMtz">
-      <div class="info">
-        <h1>RonMtz</h1>
-        <h2>Estratega Visual</h2>
-        <p><i class="fas fa-home"></i> Popayán</p>
-      </div>
-    </div>
-    <div class="description">
-      <p>Soy un apasionado por la comunicación y la creatividad. Durante más de 20 años he combinado la publicidad y el diseño en proyectos únicos e inspiradores. Ayudo a marcas, instituciones y personas a potenciar su identidad a través de soluciones visuales estratégicas.</p>
-    </div>
+  <div class="container">
+    <img src="RonMtz.png" alt="RonMtz">
+    <h1>RonMtz</h1>
+    <h2>Estratega Visual</h2>
+    <div class="location"><i class="fas fa-home"></i> Popayán</div>
+    <p>
+      Soy un apasionado por la comunicación y la creatividad. Durante más de 20 años he combinado la publicidad y el diseño en proyectos únicos e inspiradores. Ayudo a marcas, instituciones y personas a potenciar su identidad a través de soluciones visuales estratégicas.
+    </p>
     <div class="social-icons">
       <a href="https://www.facebook.com/ronnie.martinez.653948" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/ronmartinezt" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -99,12 +76,8 @@
       <a href="https://wa.me/573207306613" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://drive.google.com/file/d/1FuG_aaxeek-QwdsdpNWO4_c8p4qCImNc/view?usp=drive_link" target="_blank"><i class="fas fa-file-download"></i></a>
     </div>
-    <div class="contact-icons">
-      <a href="tel:+573207306613"><i class="fas fa-phone"></i></a>
-      <a href="mailto:imago.cv@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-    <div class="contact-info">
-      <p>+57 320 730 6613 · imago.cv@gmail.com</p>
+    <div class="contact">
+      <p><i class="fas fa-phone-alt"></i> +57 320 730 6613 · <i class="fas fa-envelope"></i> imago.cv@gmail.com</p>
     </div>
   </div>
 </body>
