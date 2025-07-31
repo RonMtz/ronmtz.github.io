@@ -1,73 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RonMtz - Estratega Visual</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>RonMtz – Estratega Visual</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      background-color: #fff;
+      margin: 0;
+      background: #fff;
+      color: #333;
       text-align: center;
+      padding: 20px;
     }
     .container {
       max-width: 600px;
-      padding: 20px;
     }
-    img {
-      width: 120px;
-      height: 120px;
+    .profile-pic {
+      width: 130px;
+      height: 130px;
       object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     h1 {
-      margin: 0;
-      font-size: 1.8rem;
+      margin: 10px 0 5px;
     }
     h2 {
       margin: 0;
-      font-size: 1.2rem;
       font-weight: normal;
-      color: #666;
+      color: #888;
+      font-size: 1.2em;
     }
     .location {
-      margin: 5px 0 20px;
       color: #666;
+      margin-bottom: 20px;
+    }
+    .location i {
+      margin-right: 5px;
     }
     p {
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.5;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
     .social-icons a {
-      margin: 0 8px;
-      font-size: 1.3rem;
-      color: #000;
+      color: #333;
+      margin: 0 10px;
+      font-size: 1.3em;
       text-decoration: none;
+      transition: color 0.3s;
     }
-    .contact {
-      margin-top: 15px;
-      font-size: 0.95rem;
+    .social-icons a:hover {
+      color: #0073b1;
+    }
+    .contact-info {
+      margin-top: 20px;
+      color: #444;
+      font-size: 0.95em;
+    }
+    .contact-icons {
+      margin: 15px 0;
+    }
+    .contact-icons a {
+      margin: 0 12px;
+      font-size: 1.3em;
+      color: #333;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="RonMtz.png" alt="RonMtz">
+    <img src="RonMtz.png" alt="RonMtz" class="profile-pic" />
     <h1>RonMtz</h1>
     <h2>Estratega Visual</h2>
     <div class="location"><i class="fas fa-home"></i> Popayán</div>
     <p>
-      Soy un apasionado por la comunicación y la creatividad. Durante más de 20 años he combinado la publicidad y el diseño en proyectos únicos e inspiradores. Ayudo a marcas, instituciones y personas a potenciar su identidad a través de soluciones visuales estratégicas.
+      Soy un apasionado de la comunicación y la creatividad. Desde hace más de 20 años fusiono la publicidad y el diseño para dar vida a proyectos únicos e inspiradores. Acompaño a marcas, instituciones y personas a potenciar su identidad a través de soluciones visuales que conectan, cuentan historias y dejan huella.
     </p>
     <div class="social-icons">
       <a href="https://www.facebook.com/ronnie.martinez.653948" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -76,8 +90,12 @@
       <a href="https://wa.me/573207306613" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://drive.google.com/file/d/1FuG_aaxeek-QwdsdpNWO4_c8p4qCImNc/view?usp=drive_link" target="_blank"><i class="fas fa-file-download"></i></a>
     </div>
-    <div class="contact">
-      <p><i class="fas fa-phone-alt"></i> +57 320 730 6613 · <i class="fas fa-envelope"></i> imago.cv@gmail.com</p>
+    <div class="contact-icons">
+      <a href="tel:+573207306613"><i class="fas fa-phone"></i></a>
+      <a href="mailto:imago.cv@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="contact-info">
+      +57 320 730 6613 · imago.cv@gmail.com
     </div>
   </div>
 </body>
